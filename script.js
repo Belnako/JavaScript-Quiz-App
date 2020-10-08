@@ -78,35 +78,108 @@ function clearStatusClass(element) {
 
 const questions = [
   {
-    question: 'What is 2 + 2?',
+    question: 'Welche Datenübertragungsraten sind heute in lokalen Netzen verfügbar?',
     answers: [
-      { text: '4', correct: true },
-      { text: '22', correct: false }
+      { text: '10 Mbit/s - 100 Gbit/s', correct: true },
+      { text: '10 Mbit/s - 100 Mbit/s', correct: false },
+      { text: '10 Gbit/s - 400 Gbit/s', correct: false }
     ]
   },
   {
-    question: 'Who is the best YouTuber?',
+    question: '1k Byte = ...',
     answers: [
-      { text: 'Web Dev Simplified', correct: true },
-      { text: 'Traversy Media', correct: true },
-      { text: 'Dev Ed', correct: true },
-      { text: 'Fun Fun Function', correct: true }
+      { text: '1024', correct: true },
+      { text: '1000', correct: false },
+      { text: '2^10', correct: true },
+      { text: '10^2', correct: false }
     ]
   },
   {
-    question: 'Is web development fun?',
+    question: 'USB 3.0 hat eine Datenübertragungsrate von',
     answers: [
-      { text: 'Kinda', correct: false },
-      { text: 'YES!!!', correct: true },
-      { text: 'Um no', correct: false },
-      { text: 'IDK', correct: false }
+      { text: '480 Mbit/s', correct: false },
+      { text: '5 Gbit/s', correct: true },
+      { text: '10 Gbit/s', correct: false },
+      { text: '40 Gbit/s', correct: false }
     ]
   },
   {
-    question: 'What is 4 * 2?',
+    question: 'IEEE 1394 ist der Standard für welche Schnittstelle zur Datenübertragung?',
     answers: [
-      { text: '6', correct: false },
-      { text: '8', correct: true }
+      { text: 'i.LINK', correct: true },
+      { text: 'FireWire', correct: true },
+      { text: 'Thunderbolt', correct: false }
+    ]
+  },
+  {
+    question: 'Wie schnell breiten sich Daten auf einer Kupferleitung aus?',
+    answers: [
+      { text: '2/3 Lichtgeschwindigkeit', correct: true },
+      { text: '250 Mbit/s', correct: false }
+    ]
+  },
+  {
+    question: 'Eine MAC-Adresse hat ',
+    answers: [
+      { text: '48 Bit', correct: true },
+      { text: '12 Bit', correct: false },
+      { text: '14 Bit', correct: false }
+    ]
+  },
+  {
+    question: 'Die Netzwerktopologie',
+    answers: [
+      { text: 'ist die Art und Weise, wie ein Netzwerk verkabelt ist.', correct: true },
+      { text: 'beschreibt die Nodes in einem Netzwerk.', correct: false }
+    ]
+  },
+  {
+    question: 'Eine IP-Adresse ',
+    answers: [
+      { text: '(Version 4) hat 12 Bit', correct: false },
+      { text: '(Version 4) hat 48 Bit', correct: true },
+      { text: '(Version 6) hat 128 Bit', correct: true },
+      { text: '(Version 6) hat 48 Bit', correct: false }
+    ]
+  },
+  {
+    question: 'Aktuelle Netzwerkgeräte sind',
+    answers: [
+      { text: 'Router', correct: true },
+      { text: 'Switch', correct: true },
+      { text: 'Server', correct: false },
+      { text: 'Client', correct: false }
+    ]
+  },
+  {
+    question: 'CSMA / CD bedeutet',
+    answers: [
+      { text: 'Carrier Sense Multiple Access / Collision Detection', correct: true },
+      { text: 'Carrier Sense Multiple Access / Collision Avoidance', correct: false },
+      { text: 'Carrier Sensoring Multiple Access / Collision Detection', correct: false }
+    ]
+  },
+  {
+    question: 'Soviel Daten können in einem Ethernet Frame gesendet werden:',
+    answers: [
+      { text: '128 - 1024 Byte', correct: false },
+      { text: '46 - 1500 Byte', correct: true }
+    ]
+  },
+  {
+    question: 'Der Ethernat Netzwerkstandard ist definiert in:',
+    answers: [
+      { text: 'IEEE 802.1', correct: false },
+      { text: 'IEEE 802.3', correct: true },
+      { text: 'IEEE 1394', correct: false }      
+    ]
+  },
+  {
+    question: 'Eine VLAN ID hat:',
+    answers: [
+      { text: '48 Bit', correct: false },
+      { text: '12 Bit', correct: true },
+      { text: '4096 mögliche VLANS', correct: true }      
     ]
   }
 ]
